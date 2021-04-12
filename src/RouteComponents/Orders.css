@@ -1,0 +1,231 @@
+.Orders {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+
+.Sub__orders {
+    width: 80%;
+    display: flex;
+    border: 3px solid lightgrey;
+    border-radius: 20px;
+    height: 90%;
+}
+
+.Orders__left {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    border-right: 3px solid lightgrey;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 0;
+}
+
+.Orders__left div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    /* border-right: 5px solid #2766cc;
+    background: linear-gradient(to right, white, #b6c9e2); */
+    color: gray;
+}
+
+.Orders__left div:hover {
+    cursor: pointer;
+}
+
+.Orders__left div h4 {
+    margin-left: 8px;
+}
+
+.Orders__right {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 0% 5%;
+    flex: 0.7;
+}
+
+.Order_right_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.Order_right_header h2 {
+    font-size: large;
+}
+
+.Order_right_header span {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    width: 7vw;
+    border: 2px solid gray;
+    color: gray;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.Order_right_header span:hover {
+    cursor: pointer;
+}
+
+.Order_right_header span .MuiSvgIcon-root {
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin-right: 5px;
+    font-size: medium;
+}
+
+.Orders__Items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.Orders__Items::-webkit-scrollbar {
+    display: none;
+}
+
+.Add_Items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    flex: 0.7;
+}
+
+.Add_Items button {
+    width: 18vw;
+    height: 21vh;
+    color: #2766cc;
+    background-color: transparent;
+    border: 2px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: medium;
+}
+
+
+.Add_Items button:hover {
+    cursor: pointer;
+}
+
+.Add__Address {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: white;
+    box-shadow: 0px 2px 2px 3px grey;
+    width: 30vw;
+    height: 70vh;
+}
+
+.Add__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 0px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.Add__header .MuiSvgIcon-root:hover {
+    cursor: pointer;
+}
+
+.Add__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.Add_Input {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Add_Input h4 {
+    font-size: small;
+    color: grey;
+}
+
+
+.Add_Input input {
+    font-size: larger;
+    outline-width: 0;
+    border: 2px solid lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Add__body button {
+    width: 50%;
+    padding: 10px 0px;
+    align-items: center;
+    font-size: medium;
+    border-radius: 5px;
+    color: white;
+    background-color: #2766cc;
+    opacity: 0.1;
+    border: 2px solid #2766cc;
+}
+
+.Add__body button:hover {
+    cursor: pointer;
+}
+
+/* for different screens  */
+
+@media (max-width: 1070px){
+    .Orders {
+        height: 87vh;
+    }
+    .Orders__left {
+        display: none;
+    }
+    .Order_right_header {
+        display: none;
+    }
+
+    .Orders__right {
+        flex: 1;
+        padding: 3%;
+    }
+
+    .Orders__Items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    } 
+
+    .Sub__orders {
+        border: none;
+        width: 90%;
+        height: 95%;
+        overflow-y: scroll;
+    }
+}

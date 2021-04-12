@@ -1,0 +1,188 @@
+.Feed {
+    flex: 0.4;
+    border-right: 2px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.Search {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.Search input {
+    flex: 1;
+    outline-width: 0;
+    background: #f0f0f0;
+    border: none;
+    font-size: larger;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Search .MuiSvgIcon-root {
+    background-color: #f8de4b;
+    color: #2766cc;
+    font-size: 30px;
+    padding: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ProductSection {
+    width: 90%;
+    align-items: flex-start;
+    padding: 20px 0px;
+    font-size: larger;
+}
+
+.ProductSection span {
+    padding: 5px;
+    color: whitesmoke;
+    background-color: #2766cc;
+    border-radius: 4px;
+}
+
+.Products {
+    width: 90%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.Products::-webkit-scrollbar {
+    display: none;
+}
+
+.FeedCategories {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    justify-content: space-evenly;
+}
+
+.sc-gsDJrp img {
+    width: 15vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0px 2px 3px 2px lightgrey;
+}
+
+.CategorySlide h3 {
+    margin-top: -40%;
+    margin-left: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.FeedCategories span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.FeedCategories span h2 {
+    color: grey;
+    font-size: large;
+}
+
+.FeedCategories span p {
+    font-size: smaller;
+    color: blue;
+}
+
+.ImageSlide {
+    width: 70%;
+}
+
+/* for different screens  */
+
+@media (max-width: 1070px) {
+    .Feed {
+        flex: 0.7;
+        border: none;
+        margin: auto;
+    }
+
+    .Search {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .Products {
+        width: 75%;
+    }
+}
+
+@media (max-width: 740px) {
+    .Feed {
+        flex: 0.8;
+    }
+
+    .Products {
+        width: 90%;
+    }
+
+    .FeedCategories {
+        height: 50%;
+        width: 90%;
+    }
+
+    .sc-gsDJrp img {
+        width: 20vw;
+    }
+
+    .Search {
+        width: 85%;
+    }
+
+    .CategorySlide h3 {
+        font-size: medium;
+    }    
+}
+
+
+@media (max-width: 570px) {
+    .Feed {
+        flex: 0.9;
+    }
+
+    .sc-gsDJrp img {
+        width: 25vw;
+    }
+}
+
+
+@media  (max-width: 460px) {
+    .Feed {
+        flex: 1;
+    }
+
+    .FeedCategories {
+        width: 90%;
+    }
+
+    .sc-gsDJrp img {
+        height: 15vh;
+    }
+
+    .Search {
+        width: 80%;
+    }
+
+    .Search input, .Search .MuiSvgIcon-root {
+        font-size: medium;
+    }
+
+    .Search input {
+        padding: 7px;
+    }
+
+} 

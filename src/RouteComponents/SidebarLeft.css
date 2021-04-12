@@ -1,0 +1,34 @@
+.SidebarLeft {
+    flex: 0.3;
+    border-right: 2px solid lightgrey;
+    padding-top: 30px;
+    display: flex;
+}
+
+.SidebarLeft div {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.SidebarLeft span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2766cc;
+    padding: 20px 0px;
+}
+
+.SidebarLeft span:hover {
+    cursor: pointer;
+}
+
+/* for diff screens */
+
+@media (max-width: 1070px){
+    .SidebarLeft {
+        display: none;
+    }
+}

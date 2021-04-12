@@ -1,0 +1,49 @@
+.BagItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 13vh;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(235, 230, 230);
+
+}
+
+.BagItem h1 {
+    font-size: medium !important;
+    font-weight: 600 !important;
+    color: rgb(43, 41, 41);
+    text-transform: uppercase;
+}
+
+.BagItem p {
+    font-size: small;
+    color: grey;
+    font-weight: 400 !important;
+    margin-top: 5px;
+}
+
+.BagItem__num {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BagItem__num p {
+    margin: 0px;
+    text-decoration: line-through;
+}
+
+.Product__Quantity {
+    display: flex;
+    align-items: center;
+    font-size: medium !important;
+}
+
+.Product__Quantity span {
+    padding: 2px 8px !important;
+}
+
+.Product__Quantity .MuiSvgIcon-root {
+    padding: 3px 4px !important;
+    font-size: medium !important;
+}

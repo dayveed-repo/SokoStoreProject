@@ -1,0 +1,130 @@
+.OrderSuccess {
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.SuccessContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.SuccessContent img {
+    height: 15vh;
+}
+
+.OrderInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OrderInfo h2 {
+    font-size: larger;
+    font-weight: bolder !important;
+    margin-bottom: 8px;
+}
+
+.OrderInfo p {
+    font-size: medium;
+    color: grey;
+}
+
+.OrderBtns {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.TrackBtn {
+    padding: 10px;
+    font-size: large;
+    width: 10vw;
+    outline-width: 0;
+    border: 3px solid #2766cc;
+    color: #2766cc;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.ContinueBtn {
+    width: 15vw;
+    font-size: large;
+    padding: 10px;
+    border: 3px solid #f8de4b;
+    color: #2766cc;
+    background-color: #f8de4b;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px lightgrey;
+    outline-width: 0;
+}
+
+.TrackBtn:hover, .ContinueBtn:hover {
+    cursor: pointer;
+}
+
+
+/* for tab screens */
+@media (max-width: 1212px){
+    .TrackBtn {
+        width: 15vw;
+    }
+
+    .ContinueBtn {
+        width: 20vw;
+    }
+
+    .OrderBtns {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 905px){
+   
+    .OrderSuccess {
+        height: 90vh;
+    }
+    .OrderBtns {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25%;
+        width: 100%;
+    }
+
+    .SuccessContent {
+        width: 90%;
+        height: 60%;
+    }
+    .TrackBtn, .ContinueBtn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 655px) {
+    .OrderInfo p {
+        font-size: small;
+        font-weight: 700 !important;
+    }
+
+    .OrderInfo h2 {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 500px) {
+    .OrderInfo p {
+        font-size: xx-small;
+        font-weight: bolder !important;
+    }
+
+    .OrderInfo h2 {
+        font-size: small;
+    }
+}

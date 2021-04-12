@@ -1,0 +1,211 @@
+.ProductDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.ProductHeader {
+    width: 80%;
+}
+
+.ProductHeader h2 {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.ProductHeader h2:hover {
+    cursor: pointer;
+}
+
+.Product__infor {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.Product__img {
+    width: 38vw;
+    height: 60vh;
+}
+
+
+.Product__description {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.Product__description h4 {
+    font-size: larger;
+    margin-bottom: 7px;
+}
+
+.Product__description p {
+    color: rgb(95, 94, 94);
+}
+
+.Product__description span {
+    display: flex;
+    flex-direction: column;
+}
+
+.Product__description span h3{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.Product__description span p{
+    font-weight: lighter;
+    opacity: 0.5;
+    font-size: medium;
+    margin-bottom: 15px;
+    text-decoration: line-through;
+}
+
+.Product__Quantity{
+    display: flex;
+    align-items: center;
+    border: 2px solid #2766cc;
+    width: fit-content;
+}
+
+.Product__Quantity .MuiSvgIcon-root {
+    color: #2766cc;
+    background-color: #f0f5fc;
+    padding: 2px;
+}
+
+.Product__Quantity .MuiSvgIcon-root:hover {
+    cursor: pointer;
+}
+
+.Product__Quantity span {
+    padding: 0px 5px;
+}
+
+.Other__Products {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.Other__Products h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.Product__Actions {
+    display: flex;
+    align-items: center; 
+}
+
+.AddToBag {
+    border: 3px solid #2766cc;
+    font-size: 17px;
+    background: transparent;
+    color: #2766cc;
+    padding: 10px 60px;
+    border-radius: 10px;
+    outline-width: none;
+    margin-right: 10px;
+    outline-width: 0;
+}
+
+.BuyNow {
+    background-color: #f8de4b;
+    color: #2766cc;
+    padding: 10px 60px;
+    border-radius: 10px;
+    outline-width: none;
+    border: 3px solid #f8de4b;
+    font-size: 17px;
+    outline-width: 0;
+}
+
+.BuyNow:hover, .AddToBag:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 1070px) {
+
+    .ProductDetails {
+        height: 90vh;
+        overflow: scroll;
+        justify-content: space-around;
+    }
+    .Product__infor {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+    .ProductHeader {
+        margin-top: 50px;
+    }
+
+    .Other__Products {
+        display: none;
+    }
+
+    .Product__img {
+        width: 97%;
+        height: 50%;
+        object-fit: cover;
+    }
+    
+    .Product__description {
+        width: 90%;
+        padding-top: 4%;
+    } 
+
+    .Product__description h4 {
+        font-size: x-large;
+    }
+
+    .Product__description .quan {
+        display: none;
+    }
+
+    .Product__Actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px) {
+    .AddToBag {
+        padding: 6px 40px;
+    }
+
+    .BuyNow {
+        padding: 6px 40px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .AddToBag {
+       font-size: medium;
+       padding: 6px 30px;
+    }
+
+    .BuyNow {
+        font-size: medium;
+        padding: 6px 30px;
+    }
+}
+

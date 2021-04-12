@@ -1,0 +1,266 @@
+/* Note some of the class names here are already given by Material-ui so i just re-styled the components with their class names */
+.MainBag {
+    width: 100%;
+    display: flex;
+    height: 50%;
+}
+
+.MuiStepIcon-root {
+    font-size: 45px !important;   
+}
+
+.MuiStepLabel-label {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+}
+
+
+.MuiCollapse-wrapperInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.Bag__Address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+}
+
+.Bag__Address div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    height: 15vh;
+    justify-content: space-around;
+    width: 15vw;
+}
+
+.Bag__Address div:hover {
+    cursor: pointer;
+}
+
+.Bag__Address span {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    justify-content: center;
+    color: #2766cc;
+}
+
+.MuiStepContent-root {
+    padding-left: 40px !important;
+}
+
+.Sub {
+    padding-top: 25px;
+    color: grey;
+}
+
+.Sub h3 {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.Login_Input {
+    display: flex;
+    align-items: center;
+}
+
+.Login_Input input {
+    border: 2px solid lightgrey;
+    color: grey;
+    font-size: 25px;
+    padding: 5px;
+    margin-right: 10px;
+    outline-width: 0;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.Login_Input .MuiButton-root {
+    width: 15%;
+    padding: 10px 0px;
+    color: #2766cc !important;
+    background-color: #f8de4b !important;
+}
+
+.placeOrder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.placeOrder button {
+    width: 30%;
+    padding: 10px 0px;
+    color: #2766cc !important;
+    background-color: #f8de4b !important;
+    margin-top: 10px;
+    outline-width: 0;
+    border: 2px solid #f8de4b;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 3px grey;
+}
+
+.placeOrder button:hover {
+    cursor: pointer;
+}
+
+/* for when the main bag is empty  */
+
+.MainBag__empty {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.MainBag__empty div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.MainBag__empty span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 0;
+}
+
+.MainBag__empty span h3 {
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.MainBag__empty span p {
+    font-weight: 300 !important;
+    color: grey;
+    font-size: large;
+}
+
+.MainBag__empty button{
+    width: 15vw;
+    color: #2766cc !important;
+    background-color: #f8de4b !important;
+    font-size: large;
+    border: 1px solid #f8de4b;
+    outline-width: 0;
+    padding: 10px 0px;
+    box-shadow: 0px 2px 2px 3px rgb(224, 221, 221);
+}
+
+.MainBag__empty button:hover {
+    cursor: pointer;
+}
+
+.MainBag__empty .MuiSvgIcon-root {
+    font-size: 150px !important;
+    color: grey;
+}
+
+.VerifyNum {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    box-shadow: 0px 2px 3px 3px gray;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+.VerifyNum__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.VerifyNum__header .MuiSvgIcon-root {
+    position: absolute;
+    right: 5%;
+}
+
+.VerifyNum__header .MuiSvgIcon-root:hover {
+    cursor: pointer;
+}
+
+.Verifynum__inputs {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.VerifyNum__header h2 {
+    font-size: larger;
+}
+
+.Verifynum__inputs input {
+    width: 3vw;
+    height: 6vh;
+    border: none;
+    background-color: rgb(228, 222, 222);
+    outline-width: 0;
+    font-size: large;
+    padding-left: 5%;
+    border-radius: 5px;
+}
+
+.VerifyNum p {
+    font-size: 13px;
+}
+
+.VerifyNum h3 {
+    font-size: small;
+    color: blue;
+}
+
+/* for differnt screens */
+@media (max-width: 1070px) {
+    #BagDeliveryInfo {
+        display: none;
+    }
+
+    .VerifyNum {
+        display: none;
+    }
+}
+
+@media (max-width: 1049px) {
+    .MainBag__empty button {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 795px) {
+    .MainBag__empty button {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 795px) {
+    .MainBag__empty button {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 390px) {
+    .MainBag__empty h3 {
+        font-size: large !important;
+    }
+
+    .MainBag__empty p {
+        font-size: medium !important;
+    }
+}
+
+@media (min-width: 1070px) {
+   
+}

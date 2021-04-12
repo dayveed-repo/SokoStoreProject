@@ -1,0 +1,131 @@
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.Categories::-webkit-scrollbar{
+    display: none;
+}
+
+.Categories h3 {
+    color: grey;
+}
+
+.Category__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.Category__items div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.Category__items div h4 {
+    /* position: absolute; */
+    margin-top: -25px;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}
+
+.Category__items div img {
+    height: 20vh;
+    width: 40vw;
+    object-fit: cover;
+    box-shadow: 2px 0px 2px 2px grey;
+    border-radius: 6px;
+}
+
+.Category__Action {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    color: grey;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 10px;
+}
+
+.Category__Action h4 {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.Category__Action p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:  15%;
+}
+
+.Sec__Products {
+    width: 90%;
+    height: 60%;
+    overflow: scroll;
+}
+
+.Category__Title {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: flex-start;
+    font-size: x-large;
+}
+
+.Category__Title .MuiSvgIcon-root {
+    margin-right: 10%;
+}
+
+.Sec__Products::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-width: 1070px){
+    .Categories {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .Category__items div h4 {
+        font-size: larger;
+    }
+}
+
+@media (max-width: 495px) {
+    .Category__Action p {
+        width: 18%;
+    }
+
+    .Category__Action h4 {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .Category__Action p {
+        width: 20%;
+    }
+
+    .Category__Action h4 {
+        width: 40%;
+    }
+}

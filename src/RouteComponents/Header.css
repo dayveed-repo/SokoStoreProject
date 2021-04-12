@@ -1,0 +1,116 @@
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid lightgray;
+}
+
+.Header__Upper{
+    padding-left: 12%;
+    background-color: #2766cc;
+    display: flex;
+    align-items: flex-start;
+    color: whitesmoke;
+}
+
+.Header__Upper h3 {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.Header__Upper .MuiSvgIcon-root{
+    font-size: large;
+}
+
+.Header__Lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.HeaderLower__Left {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.HeaderLower__Left .MuiSvgIcon-root{
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 50%;
+    color: gray;
+    background-color: whitesmoke;
+    margin-right: 7px;
+}
+
+.HeaderLeft__Info h3 {
+    font-weight: 900;
+    font-size: 23px;
+    margin-bottom: 6px;
+}
+
+.HeaderLower__Right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 0.25;
+}
+
+.Header__Icon {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(41, 40, 40);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Header__Icon:hover {
+    cursor: pointer;
+}
+
+.Header__Icon p{
+    margin-left: 12px;
+    font-weight: 200;
+}
+
+.Header__hidden {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    width: 65%;
+    margin: auto;
+}
+
+.Header__hidden h4 {
+    font-size: x-large;
+}
+
+.Header__hidden button {
+    width: 7vw;
+    padding: 8px 0px;
+    font-size: medium;
+    border: 3px solid gray;
+    color: gray;
+    background-color: transparent;
+    border-radius: 7px;
+    outline-width: 0;
+}
+
+.Header__hidden button:hover {
+    cursor: pointer;
+}
+
+/* for diff screens */
+@media (max-width: 1070px) {
+    .Header {
+        display: none;
+    }
+
+    .HeaderLower__Right {
+        display: none;
+    }
+}

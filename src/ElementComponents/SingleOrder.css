@@ -1,0 +1,67 @@
+.SingleOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    width: 40%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.SingleOrder:hover {
+    cursor: pointer;
+}
+
+.OrderHeader {
+    display: flex;
+    align-items: center;
+}
+
+.OrderHeader h3 {
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.OrderHeader .MuiSvgIcon-root {
+    padding: 10px;
+    background-color: rgb(226, 223, 223);
+    border-radius: 50%;
+    color: grey;
+    font-size: 30px;
+}
+
+.OrderBody div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.OrderBody div h4 {
+    font-size: small;
+}
+
+.OrderBody div p {
+    margin-top: 4px;
+    font-size: smaller;
+    color: gray;
+}
+
+.OrderLower {
+    display: flex;
+    align-items: center;
+    font-size: small !important;
+}
+
+.OrderLower .MuiSvgIcon-root {
+    font-size: medium !important;
+    margin-right: 5px;
+}
+
+@media (max-width: 1070px) {
+    .SingleOrder {
+        width: 80%;
+    }
+}

@@ -1,0 +1,12 @@
+.RelatedProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.RelatedProduct img {
+    height: 15vh;
+    width: 8vw;
+    padding: 0;
+}

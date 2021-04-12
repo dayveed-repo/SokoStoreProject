@@ -1,0 +1,90 @@
+
+.Product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.Product:hover, .Product button:hover {
+    cursor: pointer;
+    background-color: #f0f5fc;
+}
+
+.Product img {
+    height: 12vh;
+    width: 6vw;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.Product__Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.Product__Info h5 {
+    margin-bottom: 10px;
+    font-size: medium;
+    max-width: 40vw;
+}
+
+.Product__Info p {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    color: rgb(114, 113, 113);
+}
+
+.Product__Info p span {
+    text-decoration: line-through;
+    font-weight: 200 !important;
+}
+
+.Product button {
+    border: 3px solid #2766cc;
+    color: #2766cc;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+
+.Product button .MuiSvgIcon-root {
+    font-size: large;
+}
+
+
+@media (max-width: 970px) {
+    .Product img {
+        width: 11vw;
+    }
+}
+
+@media (max-width: 670px) {
+    .Product img {
+        width: 16vw;
+        height: 10vh;
+    }
+
+    .Product button {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 530) {
+    .Product img {
+        width: 20vw;
+    }
+}
+
+
+@media (max-height: 630px) {
+    .Product img {
+        height: 8vh;
+    }
+}
