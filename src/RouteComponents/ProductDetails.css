@@ -28,7 +28,6 @@
     align-items: center;
     width: 80%;
     justify-content: space-between;
-    margin: 20px 0px;
 }
 
 .Product__img {
@@ -143,7 +142,7 @@
 @media (max-width: 1070px) {
 
     .ProductDetails {
-        height: 90vh;
+        height: 85vh;
         overflow: scroll;
         justify-content: space-around;
     }
@@ -155,7 +154,11 @@
     }
 
     .ProductHeader {
-        margin-top: 50px;
+        height: fit-content;
+    }
+
+    .ProductHeader h2{
+        margin-top: 0px;
     }
 
     .Other__Products {
