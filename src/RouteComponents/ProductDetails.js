@@ -25,7 +25,7 @@ function ProductDetails() {
                 <div className="Product__description">
                     <div>
                         <h4>{viewedProduct && viewedProduct.name}</h4>
-                        <p>Sadia 2-tier file cabinet is the perfect cabinyou can place this mobile cabinet wherever you want to move.</p>
+                        <p>Sadia 2-tier files for cabinet is the perfect cabinyou can place this mobile cabinet wherever you want to move.</p>
                     </div>
 
                     <div>
