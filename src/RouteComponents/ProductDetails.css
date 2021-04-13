@@ -144,7 +144,7 @@
     .ProductDetails {
         height: 80vh;
         overflow: scroll;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .Product__infor {
         display: flex;
@@ -159,7 +159,7 @@
     }
 
     .ProductHeader h2{
-        margin-top: 30px;
+        margin-top: 4%;
     }
 
     .Other__Products {
@@ -168,14 +168,15 @@
 
     .Product__img {
         width: 97%;
-        height: 50%;
+        height: 45%;
         object-fit: cover;
     }
     
     .Product__description {
         width: 90%;
-        padding-top: 4%;
-        height: 100%;
+        padding-top: 3%;
+        height: 80%;
+        background-color: lightcoral;
     } 
 
     .Product__description h4 {
