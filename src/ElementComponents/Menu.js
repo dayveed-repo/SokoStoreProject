@@ -22,7 +22,7 @@ function Menu() {
                     display: 'flex', 
                     flexDirection: "column", 
                     alignItems: "center",
-                    padding: "8px",
+                    padding: "6px",
                     background: `${location.pathname === '/' ? "#f0f5fc" : ''}`
                      }}>
                     <HomeOutlinedIcon />

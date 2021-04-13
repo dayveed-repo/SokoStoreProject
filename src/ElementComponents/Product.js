@@ -17,7 +17,7 @@ function Product({ imageSrc, name, price, discount, id }) {
             <div className="Product" style={{
                 flexDirection: `${sectionView && location.pathname === '/Sections' ? "column" : ""}` ,
                 width: `${sectionView && location.pathname === '/Sections' ? "40vw" : ""}`,
-                height: `${sectionView && location.pathname === '/Sections' ? "40vh" : ""}`,
+                height: `${sectionView && location.pathname === '/Sections' ? "45vh" : ""}`,
                 justifyContent: `${sectionView && location.pathname === '/Sections' ? "space-between" : ""}`,
                 alignItems: `${sectionView && location.pathname === '/Sections' ? "flex-start" : ""}`
         }} onClick={() => dispatch(actions.getViewedProduct(id))}>
@@ -36,7 +36,7 @@ function Product({ imageSrc, name, price, discount, id }) {
 
             <button style={{
                 width: `${sectionView && location.pathname === '/Sections' ? "90%" : ""}`,
-                fontSize: `${sectionView && location.pathname === '/Sections' ? "large" : ""}`,
+                fontSize: `${sectionView && location.pathname === '/Sections' ? "medium" : ""}`,
                 justifyContent: `${sectionView && location.pathname === '/Sections' ? "center" : ""}`,
                 borderRadius: `${sectionView && location.pathname === '/Sections' ? "5px" : ""}`,
                 height: `${sectionView && location.pathname === '/Sections' ? "5vh" : ""}`

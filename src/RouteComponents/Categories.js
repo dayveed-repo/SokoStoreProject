@@ -23,9 +23,10 @@ function Categories() {
         setcurrentView(!currentView)
     }
 
+
     return (
         <>
-        <div className="Categories" style={{ height: `${secName ? '87vh' : ''}`}} >
+        <div className="Categories" style={{ height: `${secName ? '88vh' : ''}`}} >
             {
                 secName && 
                 <div className="Category__Title" onClick={() => setsecName("")}>
