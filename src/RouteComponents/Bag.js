@@ -71,7 +71,7 @@ function Bag() {
 {/* ----------------------- main bag item ----------------------------------- */}
             <div className="BagItems">                
                 
-                {bag.map(item => <BagItem name={item.name} price={item.price}  quantity={item.quantity} />)}
+                {bag.map(item => <BagItem key={item.id} id={item.id} name={item.name} price={item.price}  quantity={item.quantity} />)}
             
             </div>
 

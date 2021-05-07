@@ -46,10 +46,10 @@ export const sokoReducer = (state = initialState, action) =>{
             case "REMOVEFROMBAG":
                 return {
                     ...state,
-                    bag: state.sokoStore.filter(item => item.id !== action.payload),
+                    bag: state.bag.filter(item => item.id !== action.payload),
                     bagTotal: state.bagTotal - specialItem.price,
                     bagTotalDis: state.bagTotalDis - specialItem.discount,
-                    bagQuantity: state.bagQuantity - 1
+                    bagQuantity: state.bagQuantity - itemInBag.quantity
                 }
             case "CLEARBAG":
                 return {
@@ -59,6 +59,22 @@ export const sokoReducer = (state = initialState, action) =>{
                     bagTotalDis: 0,
                     bagQuantity: 0
                 }
+            case "INCREASEQUANTITY": 
+                return {
+                    ...state,
+                    bag: state.bag.map(item => item.id === action.payload ? {...item, quantity: item.quantity + 1} : {...item}),
+                    bagQuantity: state.bagQuantity + 1,
+                    bagTotal: state.bagTotal + itemInBag.price,
+                    bagTotalDis: state.bagTotalDis + itemInBag.discount
+                }
+            case "DECREASEQUANTITY":
+                return {
+                    ...state,
+                    bag: state.bag.map(item => item.id === action.payload ? {...item, quantity: item.quantity - 1} : {...item}),
+                    bagQuantity: state.bagQuantity - 1,
+                    bagTotal: state.bagTotal - itemInBag.price,
+                    bagTotalDis: state.bagTotalDis - itemInBag.discount
+                }    
             default:
                 return state;
         }

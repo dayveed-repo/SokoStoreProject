@@ -38,6 +38,20 @@ const clearBag = () => {
     }
 }
 
+const increaseBagItem = (id) => {
+    return {
+        type: "INCREASEQUANTITY",
+        payload: id,
+    }
+}
+
+const decreaseBagItem = (id) =>{
+    return {
+        type: "DECREASEQUANTITY",
+        payload: id
+    }
+}
+
 export default {
     getAddressData,
     changeView,
@@ -45,4 +59,6 @@ export default {
     addItemToBag,
     removeItemFromBag,
     clearBag,
+    increaseBagItem,
+    decreaseBagItem,
 }

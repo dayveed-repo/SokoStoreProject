@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import './BagItem.css'
+import { useDispatch } from 'react-redux';
+import actions from '../reduxComponents/actions';
 
-function BagItem({name, discount, quantity, price}) {
+function BagItem({ id, name, discount, quantity, price}) {
+
+    const dispatch = useDispatch()
+
+    const handleReduce = () =>{
+        if(quantity > 1) {
+            dispatch(actions.decreaseBagItem(id))
+        }else {
+            dispatch(actions.removeItemFromBag(id))
+        }
+    }
+
     return (
         <div className="BagItem">
             <div>
@@ -18,9 +31,9 @@ function BagItem({name, discount, quantity, price}) {
                 </div>
 
                 <div className="Product__Quantity">
-                    <AddRoundedIcon />
+                    <AddRoundedIcon onClick={() => dispatch(actions.increaseBagItem(id))} />
                     <span>{quantity}</span>
-                    <RemoveIcon />
+                    <RemoveIcon onClick={handleReduce} />
                 </div>
             </div>
         </div>
